@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Mooli&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Roboto:wght@100&display=swap');
+
+.b1 {
+  font-family: 'Mooli', sans-serif;
+  left: 10%;
+  top: 7%;
+  position: absolute;
+  color: rgb(227, 201, 244);
+  font-weight: bold
+}
+h1{
+  font-family: 'Lobster', cursive;
+}
+h2{
+  font-family: 'Lobster', cursive;
+  
+}
+.texto{
+  color: #f0f4f4;
+}
+.titulo2{
+  font-size: 40px;
+  top: 105%;
+  position: absolute;
+  color: #e7c3f1;
+}
+.texto1 a{
+  text-align: left;
+}
+p a{
+  text-align: center;
+  color: #e4b3ed;
+}
+p{
+  line-height: 1.5;
+
+}
+
+
+.texto1{
+  margin-top: 30px;
+  color: #e6d1e5;
+}
+.aa{
+  font-family: 'Lobster', cursive;
+  right: 10%;
+  top: 20%;
+
+  position: absolute;
+  color: #e7c3f1;
+  font-weight: bold;
+}
+.imagen {
+  background-image: url('/Alondrita-21/FLECHA-DOWN.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  right: 13%;
+  top: 30%;
+  width: 65px;
+  height: 93px;
+  position: absolute;
+  color: #e7c3f1;
+
+
+}
+
+/*Este codigo modifica la seccion */
+section {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 100vh;
+  z-index: 2;
+}
+
+.recargar {
+  background-image: url('/Alondrita-21/Recargar.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 50px;
+  height: 50px;
+  border: none;
+  /* Quitar el borde del botón */
+  color: white;
+  /* Color del texto */
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  left: 5%;
+  top: 5%;
+
+}
+
+/*Este bloque de codigo modifica la alineacion de los div con los iconos */
+#miSeccion {
+
+  height: 100vh;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+.hidden{
+  margin: 30px;
+  border: 10px solid #e7c3f1;
+  align-content: center;
+}
+
+/* Este codigo moifica y hace hidden de los stickers */
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
+.logos {
+  display: flex;
+  margin-top: 40px;
+}
+
+.logo:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+.logo:nth-child(3) {
+  transition-delay: 400ms;
+}
+
+.logo:nth-child(4) {
+  transition-delay: 600ms;
+}
